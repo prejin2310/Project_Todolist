@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="container">
+        <div class="title-div">
+            <h1> <%= dayToday %> </h1>
+        </div>
+        <div class="items-div">
+            <div class="form-input">
+                <form action="/" method="POST">
+                    <input type="text" name="newItem" autocomplete="off" placeholder="What do you need to do today?">
+                    <input type="submit" value="ADD">
+                </form>
+            </div>
+
+            <ul>
+                <% for (i=0; i <nItem.length; i++){ %>
+                    <div class="eachItem">
+                        <input type="checkbox" name="a">
+                        <li> <%= nItem[i] %> </li>
+                    </div>
+                <% } %>
+
+            </ul>
+        </div>
+</div>
+<%- include("partials/footer.ejs") %>
+</body>
+</html>

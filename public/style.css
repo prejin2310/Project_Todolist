@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #2A2F4F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  width: 800px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.title-div>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-input input[type="text"] {
+    padding: 10px;
+    border: 1px solid #525FE1;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 650px;
+    margin-right: 10px;
+}
+
+.form-input input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.title-div>h1{
+    padding: 10px 25px;
+    color: #525FE1;
+}
+
+.items-div>ul{
+    list-style-type: none; 
+    padding: 0;
+}
+.eachItem{
+    display: flex;
+    border-bottom: 1px solid #ccc; 
+    padding: 10px;
+}
+
+.eachItem>li{
+    margin-left: 10px;
+}
+
+
+.eachItem input[type="checkbox"]:checked ~ li {
+    text-decoration: line-through;
+    text-decoration-color: #525FE1;
+    color: #535353;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.4); 
+}
+
+.hero-title{
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+}
+
+.copyright{
+    margin-top: 20px;
+    color: white;
+}
